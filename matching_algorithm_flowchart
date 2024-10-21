@@ -1,0 +1,16 @@
+// Matching Algorithm Implementation Flowchart
+digraph {
+	A [label="Start Matching Process"]
+	B [label="Researcher Preferences"]
+	C [label="Project Requirements"]
+	D [label="Gale-Shapley Algorithm"]
+	E [label="Competency-Based Matching"]
+	F [label="Successful Match"]
+	A -> B [label="Collect Researcher Data"]
+	A -> C [label="Collect Project Data"]
+	B -> D [label="Preference Weighting"]
+	C -> D [label="Project Requirements Analysis"]
+	D -> E [label="Apply Gale-Shapley Algorithm"]
+	E -> F [label="Match Evaluation"]
+	F -> A [label="Iterate if No Match" constraint=false]
+}
